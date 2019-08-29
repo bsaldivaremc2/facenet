@@ -1,5 +1,5 @@
 $( function() {
- $( "#send_img_btn" ).click(function() {
+ $( "#send_img_btn" ).on('click touch',function() {
 
   console.log(send_msg);
   //var image_l = image_dic['image'].length;
@@ -32,7 +32,7 @@ $( function() {
          }
       });
  });
- $( "#send_test_btn" ).click(function() {
+ $( "#send_test_btn" ).on('click touch',function() {
    //var box = [144,169,322, 444];
    var box = [156,84,57,77];
    var result_id = results_canvas_id_base+results_counter;
