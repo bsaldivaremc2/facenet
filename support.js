@@ -23,3 +23,4 @@ function create_result_row(parent_id,faces_right="",description="")
   //$("#"+parent_id).append(row_html);
   $("#"+parent_id).prepend(row_html);
 }
+//file:///home/bsaldivar/Github/facenet/index.html
