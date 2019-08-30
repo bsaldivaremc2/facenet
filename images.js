@@ -10,7 +10,7 @@ $( function() {
       .pipe(input)
       .then(function(output) {
           console.log(output);
-          $('#message').html(received_msg);
+          $('#message').html(output);
          var faces = output['result']['faces'];
          var total_faces = faces.length;
          for(var i = 0;i<total_faces;i++)
