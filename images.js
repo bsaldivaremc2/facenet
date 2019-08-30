@@ -6,12 +6,11 @@ $( function() {
   $('#message').html(send_msg);
   var input = json_data;
   Algorithmia.client("simGARGu+tInKtSfK5AMdtMmzy11")
-      .algo("bsaldivar/cofundrecognition/0.1.3?timeout=3000") // timeout is optional
+      .algo("bsaldivar/cofundrecognition/0.1.3?timeout=300") // timeout is optional
       .pipe(input)
       .then(function(output) {
-          console.log(output["error"]["message"]);
-          console.log(output["error"]["stacktrace"]);
-          $('#message').html(output);
+         console.log(output);
+         $('#message').html(output);
          var faces = output['result']['faces'];
          var total_faces = faces.length;
          for(var i = 0;i<total_faces;i++)
