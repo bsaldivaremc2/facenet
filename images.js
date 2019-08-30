@@ -58,4 +58,13 @@ $( function() {
    ///
 
 });//End of send_test_btn
+  $( "#clear_results_btn" ).on('click touch',function() {
+    /*
+    $("#display_canvas").remove();
+    $("#main_canvas").append(display_canvas_html);
+    */
+    $("#right").html("");
+
+  });//End of clear_results_btn
+
 });//End of loop functions

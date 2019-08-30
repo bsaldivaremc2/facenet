@@ -10,6 +10,8 @@ var received_msg = "";
 var error_msg = "<p>There was an error, please try the <strong>Send test data to server</strong> or upload a valid image</p>";
 var ERASE_RESULT_TIMER = 10;
 var send_image_button_text = "Analyze Image ";
+var clear_results_button_text = "Clear results";
+
 var top_header_text = `COFUND Fellow identifier`;
 var top_description_text = `
   <p>Find which <a href="http://www.urv.cat/en/research/support/programmes/marti-franques/cofund/fellows/" target="_blank">

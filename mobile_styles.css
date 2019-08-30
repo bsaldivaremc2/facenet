@@ -1,3 +1,7 @@
+body{
+  background-color: #DCDCDC;
+}
+
 .btn {
   font-family: Arial;
   color: #f2eaf2;
@@ -28,6 +32,11 @@
 #send_img_btn{
   margin-left: 20px;
 }
+
+#clear_results_btn{
+  margin-left: 20px;
+}
+
 #dummy{
   display: none;
 }
@@ -85,7 +94,7 @@
   padding: 0.5px 0.5px 0.5px 0.5px;
   margin: 1px;
   height: 66px;
-  background-color: white;
+  /*background-color: white;*/
 }
 .face_left{
   float: left;
@@ -108,8 +117,8 @@
   margin-top: 2px;
   /* border:  1px solid black;*/
   padding: 0.5px 0.5px 0.5px 0.5px;
-  background-color: #504e4a;
-  color: white;
+  background-color: #C0C0C0;
+  color: black;
 }
 
 #all{
