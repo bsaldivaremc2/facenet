@@ -11,6 +11,7 @@ var error_msg = "<p>There was an error, please try the <strong>Send test data to
 var ERASE_RESULT_TIMER = 10;
 var send_image_button_text = "Analyze Image ";
 var clear_results_button_text = "Clear results";
+var db_img_dir = 'imgs/cofund_faces/';
 
 var top_header_text = `COFUND Fellow identifier`;
 var top_description_text = `

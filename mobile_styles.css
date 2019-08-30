@@ -108,6 +108,12 @@ body{
   padding: 0.5px 0.5px 0.5px 0.5px;
   background-color: #d2939a;
 }
+.face_right{
+  float: left;
+  /*border:  1px solid black;*/
+  padding: 0.5px 0.5px 0.5px 0.5px;
+  background-color: #d2939a;
+}
 .faces_bottom{
   clear: left;
   text-align: left;

@@ -6,7 +6,7 @@ $( function() {
   $('#message').html(send_msg);
   var input = json_data;
   Algorithmia.client("simGARGu+tInKtSfK5AMdtMmzy11")
-      .algo("bsaldivar/cofundrecognition/0.1.4?timeout=300") // timeout is optional
+      .algo("bsaldivar/cofundrecognition/0.1.6?timeout=300") // timeout is optional
       .pipe(input)
       .then(function(output) {
          console.log(output);
@@ -20,14 +20,18 @@ $( function() {
            var similar_people = face['top'];
            var result_id = results_canvas_id_base+results_counter;
            var description = "Looks like: ";
+           var IDs = []
+           var faces_right_html = '  '
            for (j=0;j<Math.min(similar_people.length,TOP_N);j++)
            {
              topx = similar_people[j];
              var distance = Math.round(topx['distance'],0);
              description+=topx['name']+" (Difference: "+distance+")</br>";
+             var img_loc = db_img_dir+topx['ID']+'.jpg'
+             faces_right_html+='<img src="'+img_loc+'" width="'+face_found_wh+'" height="'+face_found_wh+'"/>'
            }
            description+="</br> The lower the Difference the higher the similarity."
-           create_result_row("right","",description);
+           create_result_row("right",faces_right_html,description);
            draw_on_canvas(face['box'],result_id);
          }
       });
