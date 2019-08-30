@@ -9,7 +9,8 @@ $( function() {
       .algo("bsaldivar/cofundrecognition/0.1.2?timeout=3000") // timeout is optional
       .pipe(input)
       .then(function(output) {
-          console.log(output);
+          console.log(output["error"]["message"]);
+          console.log(output["error"]["stacktrace"]);
           $('#message').html(output);
          var faces = output['result']['faces'];
          var total_faces = faces.length;
