@@ -26,7 +26,7 @@ $( function() {
              var distance = Math.round(topx['distance'],0);
              description+=topx['name']+" (Difference: "+distance+")</br>";
            }
-           description+="</br> The lower the distance the higher the similarity."
+           description+="</br> The lower the Difference the higher the similarity."
            create_result_row("right","",description);
            draw_on_canvas(face['box'],result_id);
          }
