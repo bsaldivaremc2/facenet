@@ -22,7 +22,7 @@ function handleImage(e){
 
       //Display canvas
       $("#display_canvas").remove();
-      var display_canvas_html = '<canvas id="display_canvas" height="512" id="canvas_face" width="512" ></canvas>';
+      //var display_canvas_html = '<canvas id="display_canvas" height="512" id="canvas_face" width="512" ></canvas>';
       $("#main_canvas").append(display_canvas_html);
       var canvasd = document.getElementById('display_canvas');
       var ctxd = canvasd.getContext('2d');
