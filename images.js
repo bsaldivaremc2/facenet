@@ -6,7 +6,7 @@ $( function() {
   $('#message').html(send_msg);
   var input = json_data;
   Algorithmia.client("simGARGu+tInKtSfK5AMdtMmzy11")
-      .algo("bsaldivar/cofundrecognition/0.1.2?timeout=3000") // timeout is optional
+      .algo("bsaldivar/cofundrecognition/0.1.3?timeout=3000") // timeout is optional
       .pipe(input)
       .then(function(output) {
           console.log(output["error"]["message"]);
