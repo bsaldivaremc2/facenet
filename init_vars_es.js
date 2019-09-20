@@ -20,7 +20,8 @@ var top_description_text = `
   <p>Sube tu fotografía y mira a qué científico te pareces. Presiona el botón <strong> Choose File </strong>
   para seleccionar la imagen desde tu computador o teléfono móvil.
    Cuando tu imagen se muestre en pantalla presiona el botón <strong>`+send_image_button_text+` </strong>.
-   La primera vez puede tardar hasta 1 minuto.</p>
+   La primera vez puede tardar hasta 1 minuto.
+   <a href="https://bsaldivaremc2.github.io/facenet/">(See in English)</a> </p>
 `;
 
 var description_start = 'Se parece a:</br>';
