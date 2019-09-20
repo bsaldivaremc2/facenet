@@ -13,7 +13,7 @@ var error_msg = "<p>Apareció un error =( . Intenta usar otra imagen o prueba nu
 var ERASE_RESULT_TIMER = 10;
 var send_image_button_text = "Analizar imagen ";
 var clear_results_button_text = "Borrar resultados";
-
+var rotate_right_html = "Rotar Imagen en sentido horario";
 
 var top_header_text = `¿A qué científico te pareces?`;
 var top_description_text = `
@@ -22,6 +22,9 @@ var top_description_text = `
    Cuando tu imagen se muestre en pantalla presiona el botón <strong>`+send_image_button_text+` </strong>.
    La primera vez puede tardar hasta 1 minuto.
    <a href="https://bsaldivaremc2.github.io/facenet/">(See in English)</a></br>
+   Antes de enviar la imagen verifica que los rostros estén verticalmente colocados (º_º).</br>
+   Usar el botón <strong>`+rotate_right_html+`</strong> hasta que esto suceda.</br>
+   </br>
    (No guardamos ninguna imagen que subas a esta aplicación acorder a las leyes de protección de datos.)
     </p>
 `;

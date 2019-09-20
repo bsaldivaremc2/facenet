@@ -71,5 +71,9 @@ $( function() {
     $("#right").html("");
 
   });//End of clear_results_btn
-
+  //Start rotate
+  $( "#rotate_right" ).on('click touch',function() {
+    rotate(direction="right");
+  });
+  //End rotate
 });//End of loop functions

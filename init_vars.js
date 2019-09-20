@@ -12,7 +12,7 @@ var error_msg = "<p>There was an error =(). Please try again later or upload ano
 var ERASE_RESULT_TIMER = 10;
 var send_image_button_text = "Analyze Image ";
 var clear_results_button_text = "Clear results";
-
+var rotate_right_html = "Rotate Image clockwise";
 
 var top_header_text = `Which scientists look similar to you?`;
 var top_description_text = `
@@ -21,6 +21,9 @@ var top_description_text = `
    Next, after your picture is displayed, press the <strong>`+send_image_button_text+` </strong>.
    The first time it might take a while to warm up, up to 1 minute.
    <a href="https://bsaldivaremc2.github.io/facenet/index_es.html">(Mirar en Español)</a></br>
+   Before sending the image for processing check if the faces of the picture are vertically alligned (º_º)</br>
+   Use the button <strong>`+rotate_right_html+`</strong> until this happens.</br>
+   </br>
    (We do not store any picture, in compliance with the Data protection laws.)
    </p>
 `;
