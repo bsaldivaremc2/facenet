@@ -5,6 +5,7 @@ $( function() {
   //var image_l = image_dic['image'].length;
   $('#message').html(send_msg);
   var input = json_data;
+  //console.log(input);
   Algorithmia.client(target_cloud_client)
       .algo(target_cloud_algo) // timeout is optional
       .pipe(input)
