@@ -19,18 +19,18 @@ $( function() {
            //top is a list, where each object has the keys: distance, name, top
            var similar_people = face['top'];
            var result_id = results_canvas_id_base+results_counter;
-           var description = description_start;
+           var description = "Looks like: ";
            var IDs = []
            var faces_right_html = '  '
            for (j=0;j<Math.min(similar_people.length,TOP_N);j++)
            {
              topx = similar_people[j];
              var distance = Math.round(topx['distance'],0);
-             description+=topx['name']+description_distance_message_start+distance+description_distance_message_end;
+             description+=topx['name']+" (Difference: "+distance+")</br>";
              var img_loc = db_img_dir+topx[imagefile_id]+imagefile_extension;
              faces_right_html+='<img src="'+img_loc+'" width="'+face_found_wh+'" height="'+face_found_wh+'"/>';
            }
-           description+=description_end;
+           description+="</br> The lower the Difference the higher the similarity.";
            create_result_row("right",faces_right_html,description);
            draw_on_canvas(face['box'],result_id);
          }
