@@ -21,7 +21,9 @@ var top_description_text = `
   para seleccionar la imagen desde tu computador o teléfono móvil.
    Cuando tu imagen se muestre en pantalla presiona el botón <strong>`+send_image_button_text+` </strong>.
    La primera vez puede tardar hasta 1 minuto.
-   <a href="https://bsaldivaremc2.github.io/facenet/">(See in English)</a> </p>
+   <a href="https://bsaldivaremc2.github.io/facenet/">(See in English)</a></br>
+   (No guardamos ninguna imagen que subas a esta aplicación acorder a las leyes de protección de datos.)
+    </p>
 `;
 
 var description_start = 'Se parece a:</br>';

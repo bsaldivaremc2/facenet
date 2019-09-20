@@ -14,13 +14,14 @@ var send_image_button_text = "Analyze Image ";
 var clear_results_button_text = "Clear results";
 
 
-var top_header_text = `Which scientists looks similar to you?`;
+var top_header_text = `Which scientists look similar to you?`;
 var top_description_text = `
   Upload your photograph and see which scientists look more similar to you.
    Press the<strong> Choose File </strong> button in order to upload an image.
    Next, after your picture is displayed, press the <strong>`+send_image_button_text+` </strong>.
    The first time it might take a while to warm up, up to 1 minute.
-   <a href="https://bsaldivaremc2.github.io/facenet/index_es.html">(Mirar en Español)</a>
+   <a href="https://bsaldivaremc2.github.io/facenet/index_es.html">(Mirar en Español)</a></br>
+   (We do not store any picture, in compliance with the Data protection laws.)
    </p>
 `;
 
