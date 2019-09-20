@@ -44,7 +44,7 @@ var imagefile_id='ID';
 var imagefile_extension='.jpg';
 
 //Science
-var target_cloud_algo = "bsaldivar/facenet_science/0.1.6?timeout=300";
+var target_cloud_algo = "bsaldivar/facenet_science/0.1.7?timeout=300";
 var target_cloud_client = "simGARGu+tInKtSfK5AMdtMmzy11";
 var db_img_dir = 'imgs/science/';
 var imagefile_id='file';
