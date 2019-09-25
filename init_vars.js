@@ -51,3 +51,6 @@ var target_cloud_client = "simGARGu+tInKtSfK5AMdtMmzy11";
 var db_img_dir = 'imgs/science/';
 var imagefile_id='file';
 var imagefile_extension='';
+
+//local
+var server="http://127.0.0.1:5000/flask"

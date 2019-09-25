@@ -26,7 +26,8 @@ var top_description_text = `
    Usar el botón <strong>`+rotate_right_html+`</strong> hasta que esto suceda.</br>
    </br>
    (No guardamos ninguna imagen que subas a esta aplicación acorder a las leyes de protección de datos.)
-    </p>
+    </p><br/>
+
 `;
 
 var description_start = 'Se parece a:</br>';
@@ -52,3 +53,6 @@ var target_cloud_client = "simGARGu+tInKtSfK5AMdtMmzy11";
 var db_img_dir = 'imgs/science/';
 var imagefile_id='file';
 var imagefile_extension='';
+
+//local
+var server="http://127.0.0.1:5000/flask"
