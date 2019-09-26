@@ -45,3 +45,9 @@ var server="http://127.0.0.1:5000/flask"
 
 //Language setting
 var see_more = {'en':'read more','es':'leer más'};
+
+//contact
+var html_contact=`Contact: <a href="https://twitter.com/bsaldivaremc2" target="_blank">Bryan Saldivar </a>
+<a href="https://twitter.com/_jidemuritala" target="_blank">Babajide Muritala </a>
+<a href="https://twitter.com/b_milosh" target="_blank">Michael Bamiloshin   </a>
+`;

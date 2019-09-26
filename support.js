@@ -95,7 +95,12 @@ function use_faces(faces)
       var distance = Math.round(topx['distance'],0);
       var bio = topx['bio_'+lang];
       var link = topx['web_'+lang];
-      description+=topx['name']+': '+bio+' <br><a href="'+link+'" target="_blank">'+see_more[lang]+'</a><br><br>';//+description_distance_message_start+distance+description_distance_message_end;
+      var link_html = ' <br><a href="'+link+'" target="_blank">'+see_more[lang]+'</a><br><br>';
+      if (link=="#")
+      {
+        link_html="";
+      }
+      description+=topx['name']+': '+bio+link_html;//+description_distance_message_start+distance+description_distance_message_end;
       var img_loc = db_img_dir+topx[imagefile_id]+imagefile_extension;
       faces_right_html+='<img src="'+img_loc+'" width="'+face_found_wh+'" height="'+face_found_wh+'"/>';
     }

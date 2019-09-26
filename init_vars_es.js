@@ -30,8 +30,7 @@ var top_description_text = `
    </br>
    (No guardamos ninguna imagen que subas a esta aplicación acorder a las leyes de protección de datos.)
     </p><br/>
-
-`;
+    <br/>`+html_contact;
 
 var description_start = 'Se parece a:</br>';
 var description_distance_message_start = ' (Diferencia: ';

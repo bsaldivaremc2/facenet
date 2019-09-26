@@ -29,7 +29,8 @@ var top_description_text = `
    </br>
    (We do not store any picture, in compliance with the Data protection laws.)
    </p>
-`;
+   <br/>
+`+html_contact;
 
 var description_start = 'Looks like:</br>';
 var description_distance_message_start = ' (Difference: ';
