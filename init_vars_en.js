@@ -35,3 +35,5 @@ var description_start = 'Looks like:</br>';
 var description_distance_message_start = ' (Difference: ';
 var description_distance_message_end = ') </br>';
 var description_end = '</br>The lower the Difference the higher the similarity.</br>A value of 30 or lower is very similar';
+
+var lang='en';

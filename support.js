@@ -76,6 +76,31 @@ function rotate(direction="right")
     ctxd.translate(-canvas_w/2, -canvas_h/2);
   }
   ctxd.drawImage(img,0,0,img.width,img.height,0,0,canvas_w,canvas_h);
-
-
+}
+function use_faces(faces)
+{
+  var total_faces = faces.length;
+  for(var i = 0;i<total_faces;i++)
+  {
+    var face = faces[i];//keys: box, confidence, keypoints (face points), top , topn
+    //top is a list, where each object has the keys: distance, name, top
+    var similar_people = face['top'];
+    var result_id = results_canvas_id_base+results_counter;
+    var description = description_start;
+    var IDs = []
+    var faces_right_html = '  '
+    for (j=0;j<Math.min(similar_people.length,TOP_N);j++)
+    {
+      topx = similar_people[j];
+      var distance = Math.round(topx['distance'],0);
+      var bio = topx['bio_'+lang];
+      var link = topx['web_'+lang];
+      description+=topx['name']+': '+bio+' <br><a href="'+link+'" target="_blank">'+see_more[lang]+'</a><br><br>';//+description_distance_message_start+distance+description_distance_message_end;
+      var img_loc = db_img_dir+topx[imagefile_id]+imagefile_extension;
+      faces_right_html+='<img src="'+img_loc+'" width="'+face_found_wh+'" height="'+face_found_wh+'"/>';
+    }
+    //description+=description_end;
+    create_result_row("right",faces_right_html,description);
+    draw_on_canvas(face['box'],result_id);
+  }
 }

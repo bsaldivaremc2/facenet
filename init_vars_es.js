@@ -37,3 +37,5 @@ var description_start = 'Se parece a:</br>';
 var description_distance_message_start = ' (Diferencia: ';
 var description_distance_message_end = ') </br>';
 var description_end = '</br>Menor la diferencia, más parecido con el científico.<br/> Un valor de 30 o menor es muy similar';
+
+var lang="es";

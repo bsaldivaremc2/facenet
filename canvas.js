@@ -59,12 +59,14 @@ function handleImage(e){
         canvas_w = canvas_w*image_factor;
         canvas_h = canvas_h*image_factor;
       }
+      /*
       if (img.width==img_max_wd)
       {
         ctxd.translate(canvas_w/2, canvas_h/2);
         ctxd.rotate(-Math.PI / 2);
         ctxd.translate(-canvas_w/2, -canvas_h/2);
       }
+      */
       //ctxd.drawImage(img,0,0,img.width,img.height,0,0,canvas_w,canvas_h);
       //var img = imgr;
       ctxd.drawImage(img,0,0,img.width,img.height,0,0,canvas_w,canvas_h);

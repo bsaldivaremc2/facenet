@@ -34,7 +34,7 @@ var imagefile_id='ID';
 var imagefile_extension='.jpg';
 
 //Science
-var target_cloud_algo = "bsaldivar/facenet_science/0.1.10?timeout=300";
+var target_cloud_algo = "bsaldivar/facenet_science/0.1.11?timeout=300";
 var target_cloud_client = "simGARGu+tInKtSfK5AMdtMmzy11";
 var db_img_dir = 'imgs/science/';
 var imagefile_id='file';
@@ -42,3 +42,6 @@ var imagefile_extension='';
 
 //local
 var server="http://127.0.0.1:5000/flask"
+
+//Language setting
+var see_more = {'en':'read more','es':'leer más'};
