@@ -96,9 +96,9 @@ function use_faces(faces)
       var bio = topx['bio_'+lang];
       var link = topx['web_'+lang];
       var link_html = ' <br><a href="'+link+'" target="_blank">'+see_more[lang]+'</a><br><br>';
-      if (link=="#")
+      if (link.length<2)
       {
-        link_html="";
+        var link_html=" <br/><br/> ";
       }
       description+=topx['name']+': '+bio+link_html;//+description_distance_message_start+distance+description_distance_message_end;
       var img_loc = db_img_dir+topx[imagefile_id]+imagefile_extension;
