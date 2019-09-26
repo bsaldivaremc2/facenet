@@ -56,3 +56,4 @@ var imagefile_extension='';
 
 //local
 var server="http://127.0.0.1:5000/flask"
+var server="http://10.30.220.113:5000/flask"
