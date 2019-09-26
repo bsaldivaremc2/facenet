@@ -83,5 +83,8 @@ $( function() {
   $( "#rotate_right" ).on('click touch',function() {
     rotate(direction="right");
   });
+  $( "#rotate_left" ).on('click touch',function() {
+    rotate(direction="left");
+  });  
   //End rotate
 });//End of loop functions

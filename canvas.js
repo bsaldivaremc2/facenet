@@ -21,12 +21,15 @@ function handleImage(e){
       canvas.height = scale_h//256//256;//img.height;
       var canvas_w = scale_w;
       var canvas_h = scale_h;
+      /*
       if (img.width==img_max_wd)
       {
         ctx.translate(canvas_w/2, canvas_h/2);
         ctx.rotate(-Math.PI / 2);
         ctx.translate(-canvas_w/2, -canvas_h/2);
+        console.log("Main rotated");
       }
+      */
       //ctx.drawImage(img,0,0);
       //var imgData = context.getImage
       ctx.drawImage(img,0,0,img.width,img.height,0,0,canvas.width,canvas.height);
@@ -62,6 +65,8 @@ function handleImage(e){
         ctxd.rotate(-Math.PI / 2);
         ctxd.translate(-canvas_w/2, -canvas_h/2);
       }
+      //ctxd.drawImage(img,0,0,img.width,img.height,0,0,canvas_w,canvas_h);
+      //var img = imgr;
       ctxd.drawImage(img,0,0,img.width,img.height,0,0,canvas_w,canvas_h);
 
       //ctxd.drawImage(img,0,0,img.width,img.height,0,0,canvas.width,canvas.height);

@@ -1,7 +1,7 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--Version 20190920 1653-->
+    <!--Version 20190926 2013-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148407269-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="mobile_styles.css">
     <script src="https://algorithmia.com/v1/clients/js/algorithmia-0.2.0.js" type="text/javascript"></script>
     <script src="init_vars.js" type="text/javascript"></script>
+    <script src="init_vars_en.js" type="text/javascript"></script>
     <script src="images.js" type="text/javascript"></script>
     <script src="support.js" type="text/javascript"></script>
     <meta charset="UTF-8">
@@ -29,25 +30,18 @@
             <div id="upload">
               <input class="btn" id="imageLoader" name="imageLoader" type="file" />
             </div>
-            <div class="btn" id="rotate_right">
-            </div>
-            <div class="btn" id="send_img_btn">
-            </div>
-            <div class="btn" id="clear_results_btn">
-            </div>
-            <div class="btn dummy" id="send_test_btn">
-              Send test data to server
-            </div>
+            <div class="btn" id="rotate_right"></div>
+            <div class="btn" id="rotate_left"></div>
+            <div class="btn" id="send_img_btn"></div>
+            <div class="btn" id="clear_results_btn"></div>
+            <div class="btn dummy" id="send_test_btn">Send test data to server</div>
           </div><!--end command panel-->
           <div id="images">
             <div id="dummy" >
               <canvas id="dummy_canvas"></canvas>
             </div>
-            <div id="main_canvas">
-              <!--<canvas id="display_canvas" height="512" id="canvas_face" width="512" ></canvas>-->
-            </div>
-            <div id="message">
-            </div>
+            <div id="main_canvas"><!--<canvas id="display_canvas" height="512" id="canvas_face" width="512" ></canvas>--></div>
+            <div id="message"></div>
           </div><!--Images section-->
         </div><!--end left-->
         <div id="right">

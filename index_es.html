@@ -11,6 +11,7 @@
     <script crossorigin="anonymous" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <link rel="stylesheet" type="text/css" href="mobile_styles.css">
     <script src="https://algorithmia.com/v1/clients/js/algorithmia-0.2.0.js" type="text/javascript"></script>
+    <script src="init_vars.js" type="text/javascript"></script>
     <script src="init_vars_es.js" type="text/javascript"></script>
     <script src="images.js" type="text/javascript"></script>
     <script src="support.js" type="text/javascript"></script>
@@ -28,25 +29,18 @@
             <div id="upload">
               <input class="btn" id="imageLoader" name="imageLoader" type="file" />
             </div>
-            <div class="btn" id="rotate_right">
-            </div>
-            <div class="btn" id="send_img_btn">
-            </div>
-            <div class="btn" id="clear_results_btn">
-            </div>
-            <div class="btn dummy" id="send_test_btn">
-              Send test data to server
-            </div>
+            <div class="btn" id="rotate_right"></div>
+            <div class="btn" id="rotate_left"></div>
+            <div class="btn" id="send_img_btn"></div>
+            <div class="btn" id="clear_results_btn"></div>
+            <div class="btn dummy" id="send_test_btn">Send test data to server</div>
           </div><!--end command panel-->
           <div id="images">
             <div id="dummy" >
               <canvas id="dummy_canvas"></canvas>
             </div>
-            <div id="main_canvas">
-              <!--<canvas id="display_canvas" height="512" id="canvas_face" width="512" ></canvas>-->
-            </div>
-            <div id="message">
-            </div>
+            <div id="main_canvas"><!--<canvas id="display_canvas" height="512" id="canvas_face" width="512" ></canvas>--></div>
+            <div id="message"></div>
           </div><!--Images section-->
         </div><!--end left-->
         <div id="right">
