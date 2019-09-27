@@ -19,7 +19,6 @@ $( function() {
       $('#message').html(received_msg);
       var faces = output['result']['faces'];
       use_faces(faces);
-      }
     }).fail(function(){
       $('#message').html(error_msg);
     });

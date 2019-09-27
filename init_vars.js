@@ -7,7 +7,7 @@ var results_canvas_id_base = 'canvas_result_';
 var TOP_N = 3;
 var ERASE_RESULT_TIMER = 10;
 var display_canvas_html = `
-<canvas id="display_canvas" height="`+max_wh+`" id="canvas_face" width="`+max_wh+`" ></canvas>
+<canvas id="display_canvas" height="`+max_wh+`" width="`+max_wh+`" ></canvas>
 `;
 
 var button_icons_wh = '16px';
